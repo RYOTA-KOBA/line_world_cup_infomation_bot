@@ -58,6 +58,6 @@ test:
 production:
   <<: *default
   database: myapp_production
-  username: myapp
-  password: <%= ENV["MYAPP_DATABASE_PASSWORD"] %>
-  url: 'mysql2://root:password@db/myapp_development?reconnect=true'
+  username: root
+  password: password
+  url: mysql2://root:password@db/myapp_development?reconnect=true
