@@ -59,5 +59,6 @@ production:
   <<: *default
   database: myapp_production
   username: root
+  host: db
   password: password
   url: mysql2://root:password@db/myapp_development?reconnect=true
