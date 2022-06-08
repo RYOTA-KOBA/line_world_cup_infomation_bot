@@ -1,5 +1,7 @@
 FROM ruby:3.1
 
+RUN apt-get update && apt-get install -y npm
+
 RUN mkdir /myapp
 WORKDIR /myapp
 COPY Gemfile /myapp/Gemfile
